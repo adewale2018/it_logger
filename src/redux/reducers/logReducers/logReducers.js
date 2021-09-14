@@ -20,8 +20,13 @@ const LogReducers = (state = initialState, action) => {
         logs: payload,
         loading: false,
       };
+    case LogTypes.ADD_LOG:
+      return {
+        ...state,
+        logs: [payload, ...state.logs],
+        loading: false,
+      };
     case LogTypes.LOGS_ERROR:
-      console.log("ERROR>>>", payload);
       return {
         ...state,
         error: payload,
