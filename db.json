@@ -1,27 +1,6 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 006",
-      "attention": false,
-      "date": "03-02-2021",
-      "tech": "Sam Smith"
-    },
-    {
-      "id": 2,
-      "message": "Workstation 002 not posting",
-      "attention": true,
-      "date": "03-02-2021",
-      "tech": "John Doe"
-    },
-    {
-      "message": "Battery replacement for Acer Aspire 3",
-      "attention": true,
-      "tech": "Jimoh Aliu",
-      "date": "2021-09-14T08:48:28.823Z",
-      "id": 3
-    },
-    {
       "message": "Now now!!!",
       "attention": false,
       "tech": "Jimoh Aliu",
@@ -36,17 +15,10 @@
       "id": 5
     },
     {
-      "message": "Battery replacement for Acer Aspire 3232",
-      "attention": false,
-      "tech": "Saheed Wale",
-      "date": "2021-09-14T09:23:14.528Z",
-      "id": 6
-    },
-    {
-      "message": "Remove the scratched screen of system 090",
+      "message": "Repair system 009",
       "attention": true,
-      "tech": "Saheed Wale",
-      "date": "2021-09-14T09:25:37.030Z",
+      "tech": "Good Friday",
+      "date": "2021-09-17T20:30:43.505Z",
       "id": 7
     }
   ],
