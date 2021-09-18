@@ -1,0 +1,9 @@
+.container {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
