@@ -20,6 +20,11 @@ const LogReducers = (state = initialState, action) => {
         logs: payload,
         loading: false,
       };
+    case LogTypes.UPDATE_LOG:
+      return {
+        ...state,
+        logs: state.logs.map((log) => (log.id === payload.id ? payload : log)),
+      };
     case LogTypes.ADD_LOG:
       return {
         ...state,
@@ -36,6 +41,16 @@ const LogReducers = (state = initialState, action) => {
       return {
         ...state,
         error: payload,
+      };
+    case LogTypes.SET_CURRENT:
+      return {
+        ...state,
+        current: payload,
+      };
+    case LogTypes.CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
       };
     default:
       return state;

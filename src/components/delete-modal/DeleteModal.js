@@ -9,7 +9,6 @@ const DeleteLogModal = (props) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
     console.log('PROPS', props);
-    // dispatch(removeLog(remove));
     M.toast({ html: "You have successfully remove the log", classes: "green" });
   };
 
