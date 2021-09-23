@@ -52,6 +52,11 @@ const LogReducers = (state = initialState, action) => {
         ...state,
         current: null,
       };
+    case LogTypes.SEARCH_LOGS:
+      return {
+        ...state,
+        logs: payload,
+      };
     default:
       return state;
   }
