@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
+import { useDispatch } from "react-redux";
+import { addTech } from "../../redux/actions/techs";
 
 const AddTechModal = () => {
+  const dispatch = useDispatch();
   const [firstName, seFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
@@ -17,7 +20,11 @@ const AddTechModal = () => {
         classes: "red",
       });
     } else {
-      console.log(firstName, lastName);
+      dispatch(addTech({ firstName, lastName: lastName.toLocaleUpperCase() }));
+      M.toast({
+        html: "Tech successfully added",
+        classes: "green",
+      });
       // Clear the fields
       seFirstName("");
       setLastName("");
