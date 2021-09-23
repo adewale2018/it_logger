@@ -1,26 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getTechsData } from "../../redux/selectors/techs";
+import { getTechs } from "../../redux/actions/techs";
 
 import TechItem from "./TechItem";
 
 const TechListModal = () => {
-  const [techs, setTechs] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  const getTechs = async () => {
-    setLoading(true);
-    const res = await fetch("/techs");
-    const data = await res.json();
-    setTechs(data);
-    setLoading(false);
-  };
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-  };
+  const dispatch = useDispatch();
+  const techs = useSelector(getTechsData);
 
   useEffect(() => {
-    getTechs();
-
+    dispatch(getTechs());
     // eslint-disable-next-line
   }, []);
 
@@ -35,7 +25,7 @@ const TechListModal = () => {
           <>
             <h4>Technician List</h4>
             <ul className="collection">
-              {!loading &&
+              {techs &&
                 techs.map((tech) => (
                   <TechItem
                     className="collection-item"

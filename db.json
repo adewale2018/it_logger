@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "Now now !!!!!",
-      "attention": true,
+      "message": "Now now, fast fats!!!",
+      "attention": false,
       "tech": "Jimoh Aliu",
       "id": 4,
-      "date": "2021-09-23T09:41:26.523Z"
+      "date": "2021-09-23T14:14:59.308Z"
     },
     {
       "message": "Battery replacement for Acer 2018",
@@ -16,32 +16,22 @@
     },
     {
       "message": "Repair system 009",
-      "attention": false,
+      "attention": true,
       "tech": "Good Friday",
       "id": 7,
-      "date": "2021-09-23T09:41:37.832Z"
+      "date": "2021-09-23T11:22:07.373Z"
     }
   ],
   "techs": [
     {
-      "id": 1,
-      "firstName": "Friday",
-      "lastName": "Austin"
-    },
-    {
-      "id": 2,
-      "firstName": "Monday",
-      "lastName": "Ashish"
-    },
-    {
-      "id": 3,
-      "firstName": "Gp",
-      "lastName": "Bosco"
-    },
-    {
       "firstName": "Saheed",
-      "lastName": "Shittu",
-      "id": 5
+      "lastName": "SHITTU",
+      "id": 1
+    },
+    {
+      "firstName": "Jean",
+      "lastName": "BOSCO",
+      "id": 2
     }
   ]
 }
