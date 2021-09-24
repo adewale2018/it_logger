@@ -41,6 +41,7 @@ const LogReducers = (state = initialState, action) => {
       return {
         ...state,
         error: payload,
+        loading: false
       };
     case LogTypes.SET_CURRENT:
       return {

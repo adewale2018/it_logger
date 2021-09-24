@@ -7,8 +7,8 @@ const INITIAL_STATE = {
 };
 
 const techReducers = (state = INITIAL_STATE, action) => {
-  const { payload } = action;
-  switch (action.type) {
+  const { payload, type } = action;
+  switch (type) {
     case TechTypes.SET_LOADING:
       return {
         ...state,
@@ -36,6 +36,7 @@ const techReducers = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         error: payload,
+        loading: false
       };
     default:
       return state;

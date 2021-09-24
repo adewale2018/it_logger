@@ -22,7 +22,7 @@ const AddTechModal = () => {
     } else {
       dispatch(addTech({ firstName, lastName: lastName.toLocaleUpperCase() }));
       M.toast({
-        html: "Tech successfully added",
+        html: `${firstName} ${lastName} was successfully added as a tech`,
         classes: "green",
       });
       // Clear the fields
