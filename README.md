@@ -1,1 +1,9 @@
 # IT Logger - (A React Application)
+
+## TECH USED ARE:
+- REACT
+- REDUX
+- MATERIALIZE.CSS
+- JSON-SERVER
+- REDUX-THUNK
+- REACT-MOMENT

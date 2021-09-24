@@ -31,7 +31,7 @@ export const getTechs = () => async (dispatch) => {
     const data = await res.json();
     dispatch(setTechs(data));
   } catch (error) {
-    dispatch(setTechError(error.response.data));
+    dispatch(setTechError(error.response.statusText));
   }
 };
 
@@ -49,11 +49,11 @@ export const addTech = (newTech) => async (dispatch) => {
     const data = await res.json();
     dispatch(setAddTech(data));
   } catch (error) {
-    dispatch(setTechError(error.response.data));
+    dispatch(setTechError(error.response.statusText));
   }
 };
 
-// Delete Log on server
+// Delete Tech on server
 export const deleteTech = (techId) => async (dispatch) => {
   try {
     setLoading();
@@ -62,6 +62,6 @@ export const deleteTech = (techId) => async (dispatch) => {
     });
     dispatch(setDeleteTech(techId));
   } catch (error) {
-    dispatch(setTechError(error.response.data));
+    dispatch(setTechError(error.response.statusText));
   }
 };
